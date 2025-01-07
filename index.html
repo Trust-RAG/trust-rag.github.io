@@ -89,48 +89,68 @@
     <div class="container is-max-desktop">
       <div class="columns is-centered">
         <div class="column has-text-centered">
-          <h1 class="title is-1 publication-title">ET-SEED:Trajectory-Level SE(3) Equivariant Diffusion Model for Robot Manipulation</h1>
+          <h1 class="title is-1 publication-title">TrustRAG: Enhancing Robustness and Trustworthiness in RAG</h1>
           <div class="is-size-5 publication-authors">
             <span class="author-block">
-              <a href="https://et-seed.github.io">Anonymous Authors<br></a></span>
-<!--             <span class="author-block">
-              <a href="https://crtie.github.io">Chenrui Tie</a><sup></sup>,</span>
+              <a href="https://huichizhou.github.io/">Huichi Zhou</a><sup style="color:#6fbf73;">1 </sup><sup>*</sup></span>
             <span class="author-block">
-              <a href="https://github.com/Cold114514">Yue Chen</a><sup></sup>,</span>
-            <span class="author-block">
-              <a href="https://warshallrho.github.io/">Ruihai Wu</a><sup></sup>,
+              <a>Kin-Hei Lee</a><sup style="color:#6fbf73">1 </sup><sup>*</sup>,
             </span>
             <span class="author-block">
-              <a href="https://github.com/dongbx0125">Boxuan Dong</a><sup></sup>,
+              <a target="_blank" href="https://acbull.github.io/">Zhonghao Zhan</a><sup
+                style="color:#6fbf73;">1</sup><sup>*</sup>,</span>
+            <span class="author-block">
+              <a target="_blank" href="http://www.yisongyue.com/">Yue Chen</a><sup style="color:#ffac33;">2</sup>,
             </span>
             <span class="author-block">
-              <a href="https://github.com/1izeyi">Zeyi Li</a><sup></sup>,
+              <a target="_blank" href="https://keg.cs.tsinghua.edu.cn/yuxiao/">Zhenhao Li</a><sup
+                style="color:#6fbf73;">1</sup>,
             </span>
-            <span class="author-block">
-              <a href="https://chongkaigao.com/">Chongkai Gao</a><sup></sup>,
-            </span>
-            <span class="author-block">
-              <a href="https://zsdonghao.github.io/">Hao Dong</a><sup></sup>
-            </span> -->
           </div>
 
-<!--           <div class="is-size-5 publication-authors">
-            <span class="author-block"><sup>1</sup>Peking University,</span>
-            <span class="author-block"><sup>2</sup>National University of Singapore</span>
-          </div> -->
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><sup style="color:#6fbf73;">1</sup>Imperial College London</span>
+            <br>
+            <span class="author-block"><sup style="color:#ffac33;">2</sup>Peking University,</span>
+            <br>
+            <span class="author-block"><sup>*</sup>Equal Contribution</span>
+          </div>
 
           <div class="column has-text-centered">
             <div class="publication-links">
               <!-- PDF Link. -->
-              <!-- <span class="link-block">
-                <a href="https://openreview.net/pdf?id=OheAR2xrtb"
+              <span class="link-block">
+                <a href="https://arxiv.org/pdf/2501.00879"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fas fa-file-pdf"></i>
                   </span>
                   <span>Paper</span>
                 </a>
-              </span> -->
+              </span>
+              
+              <!-- arXiv Link. -->
+              <span class="link-block">
+                <a href="https://arxiv.org/abs/2501.00879"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+
+              <!-- GitHub Code Link. -->
+              <span class="link-block">
+                <a href="https://github.com/HuichiZhou/TrustRAG"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                </a>
+              </span>
+
               <!-- <span class="link-block">
                 <a href="https://et-seed.github.io"
                    class="external-link button is-normal is-rounded is-dark">
@@ -179,19 +199,10 @@
   </div>
 </section>
 
-<section class="hero teaser">
+<!-- <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
-<!--       <video id="teaser" autoplay muted loop playsinline height="100%">
-        <source src="./static/videos/teaser.mp4"
-                type="video/mp4">
-      </video> -->
       <img src="./static/images/teaser_v14-1.png"/>
-<!--       <h2 class="subtitle has-text-centered">
-        <span class="dnerf">Nerfies</span> turns selfie videos from your phone into
-        free-viewpoint
-        portraits.
-      </h2> -->
       <p>
         ET-SEED is a visual imitation learning algorithm that marries
         SE(3) equivariant visual representations with diffusion policies. 
@@ -202,7 +213,7 @@
       </p>
     </div>
   </div>
-</section>
+</section> -->
 
 
 <!-- <section class="hero is-light is-small">
@@ -272,17 +283,7 @@
         <hr style="margin-top:0px">
         <div class="content has-text-justified">
           <p>
-            Imitation learning, e.g., diffusion policy, has proven effective in various robotic manipulation tasks. 
-            However, extensive demonstrations are required for policy robustness and generalization. 
-            To reduce the demonstration reliance, we leverage spatial symmetry and propose ET-SEED, an efficient 
-            trajectory-level SE(3) equivariant diffusion model for proposing action sequences in complex robot manipulation tasks. 
-            Further, previous equivariant diffusion models require the per-step equivariance in the Markov process, 
-            making it difficult to learn policy under such strong constraints. We theoretically extend equivariant
-            Markov kernels and simplify the condition of equivariant diffusion process, thereby significantly
-            improving training efficiency for trajectory-level SE(3) equivariant diffusion policy in an end-to-end manner. 
-            We evaluate ET-SEED on representative robotic manipulation tasks, involving rigid body, articulated and deformable object. 
-            Experiments demonstrate superior data efficiency and manipulation proficiency of our proposed method, 
-            as well as its ability to generalize to unseen configurations with only a few demonstrations. 
+            Retrieval-Augmented Generation (RAG) systems enhance large language models (LLMs) by integrating external knowledge sources, enabling more accurate and contextually relevant responses tailored to user queries. However, these systems remain vulnerable to corpus poisoning attacks that can significantly degrade LLM performance through the injection of malicious content. To address these challenges, we propose TrustRAG, a robust framework that systematically filters compromised and irrelevant content before it reaches the language model. Our approach implements a two-stage defense mechanism: first, it employs K-means clustering to identify potential attack patterns in retrieved documents based on their semantic embeddings, effectively isolating suspicious content. Second, it leverages cosine similarity and ROUGE metrics to detect malicious documents while resolving discrepancies between the model's internal knowledge and external information through a self-assessment process. TrustRAG functions as a plug-and-play, training-free module that integrates seamlessly with any language model, whether open or closed-source, maintaining high contextual relevance while strengthening defenses against attacks. Through extensive experimental validation, we demonstrate that TrustRAG delivers substantial improvements in retrieval accuracy, efficiency, and attack resistance compared to existing approaches across multiple model architectures and datasets. We have made TrustRAG available as open-source software at <a href="https://github.com/HuichiZhou/TrustRAG" target="_blank">https://github.com/HuichiZhou/TrustRAG</a>.
           </p>
         </div>
       </div>
@@ -290,7 +291,7 @@
     <!--/ Abstract. -->
 
     <!-- Paper video. -->
-    <div class="columns is-centered has-text-centered">
+    <!-- <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
         <h2 class="title is-3">Video</h2>
         <hr style="margin-top:0px">
@@ -299,238 +300,207 @@
                   frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
         </div>
       </div>
-    </div>
+    </div> -->
     <!--/ Paper video. -->
-    <div class="columns is-centered has-text-centered">
+    <!-- <div class="columns is-centered has-text-centered">
       <div class="column is-full-width">
         <h2 class="title is-3"><br>Method</h2>
         <hr style="margin-top:0px">
         <h3 class="title is-4">Full Pipeline</h3>
         <img src="./static/images/Pipline_v9.png">
       </div>
-    </div>
+    </div> -->
   </div>
 </section>
 
 
 <section class="section">
   <div class="container is-max-desktop">
-
-    <!-- <div class="columns is-centered"> -->
-
-      <!-- Visual Effects. -->
-      <!-- <div class="column">
-        <div class="content">
-          <h2 class="title is-3">Visual Effects</h2>
-          <p>
-            Using <i>nerfies</i> you can create fun visual effects. This Dolly zoom effect
-            would be impossible without nerfies since it would require going through a wall.
-          </p>
-          <video id="dollyzoom" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/dollyzoom-stacked.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-      </div> -->
-      <!--/ Visual Effects. -->
-
-      <!-- Matting. -->
-      <!-- <div class="column">
-        <h2 class="title is-3">Matting</h2>
-        <div class="columns is-centered">
-          <div class="column content">
-            <p>
-              As a byproduct of our method, we can also solve the matting problem by ignoring
-              samples that fall outside of a bounding box during rendering.
-            </p>
-            <video id="matting-video" controls playsinline height="100%">
-              <source src="./static/videos/matting.mp4"
-                      type="video/mp4">
-            </video>
-          </div>
-
-        </div>
-      </div>
-    </div> -->
-    <!--/ Matting. -->
-
     <!-- Animation. -->
     <div class="columns is-centered has-text-centered">
       <div class="column is-full-width">
-        <h2 class="title is-3">Results</h2>
+        <h2 class="title is-3">Our Method: TrustRAG</h2>
         <hr style="margin-top:0px">
-
+        <img src="./static/images/Method.jpg" width="100%"/>
         <p>
-          We evaluate our method on standard robot manipulation tasks in both simulation and real 
-          world settings. The results demonstrate that our approach out performs all baselines in 
-          terms of data efficiency and spatial generalization.
+        Figure 1: The TrustRAG framework defends against corpus poisoning attacks in RAG systems through a five-step process: (1) identifying
+malicious documents using K-means clustering, (2) filtering malicious content based on embedding distribution, (3) extracting internal
+knowledge for accurate reasoning, (4) resolving conflicts by grouping consistent documents and removing irrelevant or conflicting ones,
+and (5) generating the reliable final answer.
         </p>
-
-        <!-- Interpolating. -->
-        <h3 class="title is-4"><br>Simulation Results</h3>
-        <!-- <div class="content has-text-justified">
-          <p>
-            We can also animate the scene by interpolating the deformation latent codes of two input
-            frames. Use the slider here to linearly interpolate between the left frame and the right
-            frame.
-          </p>
-        </div> -->
-        <div class="columns is-centered has-text-centered">
-          <div class="column is full width">
-            <img src="./static/images/fig4.png"
-                 class="interpolation-image"
-                 alt="Simulation Results"/>
-          </div>
-        </div>
-        <br/>
-        <!--/ Interpolating. -->
-
-        <!-- Re-rendering. -->
-        <h3 class="title is-4">Real World Results</h3>
-        <!-- <div class="content has-text-justified">
-          <p>
-            Using <span class="dnerf">Nerfies</span>, you can re-render a video from a novel
-            viewpoint such as a stabilized camera by playing back the training deformations.
-          </p>
-        </div> -->
-        <!-- <hr style="margin-top:0px"> -->
-        <div class="container is-max-desktop" style="display: flex;">
-          <div class="hero-body" style="padding-top: 20px; padding-bottom: 20px; width: 50%;">
-            <video id="replay-video"
-            controls
-            preload
-            playsinline
-            width="100%">
-            <source src="./static/videos/real1.mp4"
-               type="video/mp4">
-            </video>
-            <p class="is-bold"></p>
-          </div>
-          <div class="hero-body" style="padding-top: 20px; padding-bottom: 20px; width: 50%;">
-            <video id="replay-video"
-            controls
-            preload
-            playsinline
-            width="100%">
-            <source src="./static/videos/real2.mp4"
-                  type="video/mp4">
-            </video>
-            <p class="is-bold"></p>
-          </div>
-        </div>
-        <div class="column">
-          <div class="container is-max-desktop" style="display: flex;">
-            <div class="hero-body" style="padding-top: 20px; padding-bottom: 20px; width: 50%;">
-              <video id="replay-video"
-              controls
-              preload
-              playsinline
-              width="100%">
-              <source src="./static/videos/real3.mp4"
-                 type="video/mp4">
-              </video>
-              <p class="is-bold"></p>
-            </div>
-            <div class="hero-body" style="padding-top: 20px; padding-bottom: 20px; width: 50%;">
-              <video id="replay-video"
-              controls
-              preload
-              playsinline
-              width="100%">
-              <source src="./static/videos/real4.mp4"
-                    type="video/mp4">
-              </video>
-              <p class="is-bold"></p>
-            </div>
-          </div>
-        </div>
-          <!-- <div class="column">
-          <video id="replay-video"
-                 controls
-                 muted
-                 preload
-                 playsinline
-                 width="75%">
-            <source src="./static/videos/real1.mp4"
-                    type="video/mp4">
-          </video>
-          <video id="replay-video"
-                controls
-                muted
-                preload
-                playsinline
-                width="75%">
-            <source src="./static/videos/real2.mp4"
-                      type="video/mp4">
-          </video>
-          <video id="replay-video"
-                controls
-                muted
-                preload
-                playsinline
-                width="75%">
-            <source src="./static/videos/real3.mp4"
-                      type="video/mp4">
-          </video>
-          <video id="replay-video"
-                controls
-                muted
-                preload
-                playsinline
-                width="75%">
-            <source src="./static/videos/real4.mp4"
-                      type="video/mp4">
-          </video>
-        </div> -->
-        <!--/ Re-rendering. -->
-
       </div>
     </div>
-    <!--/ Animation. -->
-
-
-    <!-- Concurrent Work. -->
-    <div class="columns is-centered">
-      <div class="column is-full-width">
-        <h2 class="title is-3">Related Projects</h2>
-        <hr style="margin-top:0px">
-
-        <!-- <div class="content has-text-justified">
-          <p>
-            There's a lot of excellent work that was introduced around the same time as ours.
-          </p>
-          <p>
-            <a href="https://arxiv.org/abs/2104.09125">Progressive Encoding for Neural Optimization</a> introduces an idea similar to our windowed position encoding for coarse-to-fine optimization.
-          </p>
-          <p>
-            <a href="https://www.albertpumarola.com/research/D-NeRF/index.html">D-NeRF</a> and <a href="https://gvv.mpi-inf.mpg.de/projects/nonrigid_nerf/">NR-NeRF</a>
-            both use deformation fields to model non-rigid scenes.
-          </p>
-          <p>
-            Some works model videos with a NeRF by directly modulating the density, such as <a href="https://video-nerf.github.io/">Video-NeRF</a>, <a href="https://www.cs.cornell.edu/~zl548/NSFF/">NSFF</a>, and <a href="https://neural-3d-video.github.io/">DyNeRF</a>
-          </p>
-          <p>
-            There are probably many more by the time you are reading this. Check out <a href="https://dellaert.github.io/NeRF/">Frank Dellart's survey on recent NeRF papers</a>, and <a href="https://github.com/yenchenlin/awesome-NeRF">Yen-Chen Lin's curated list of NeRF papers</a>.
-          </p>
-        </div> -->
-      </div>
-    </div>
-    <!--/ Concurrent Work. -->
-
   </div>
 </section>
+
+<section class="section">
+  <div class="container">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Experimental Results</h2>
+        <div class="content has-text-justified">
+          <ul>
+            <li>
+              We conduct comprehensive experiments compared with different defense frameworks and RAG systems under the attacks of two kinds of popular methods 
+              (PIA (Zhong et al., 2023) and PoisonedRAG (Zou et al., 2024)) 
+              based on the three kinds of large language models. The more detailed results of PoisonedRAG in different poison rate can be found in the Table 4, Table 5, and Table 6.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="container">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Main Results</h2>
+          <div class="content has-text-justified">
+            <p style="text-align: center;">
+              <a href="https://arxiv.org/pdf/2501.00879" target="_blank" rel="external">
+                <img class="center-block org-banner" src="./static/images/main_result.png" width="100%"
+                  style="display: inline-block;">
+              </a>
+            </p>
+            <p align="center">
+              Table 1: Main Results show that different defense frameworks and RAG systems defend against two kinds of attack methods based on
+three kinds of large language models.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>    
+
+
+    <div class="container">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <!-- 修改 Detailed Analysis of TrustRAG 的字体大小 -->
+          <h2 class="title is-3">Detailed Analysis of TrustRAG</h2>
+          <!-- Effectiveness of K-means Filtering Strategy 保持不变 -->
+          <h2 class="title is-4">(1) Effectiveness of K-means Filtering Strategy</h2>
+          <h2 class="title is-5">(1.1) Distribution of Poisoned Documents</h2>
+          
+          <ul>
+            <li>
+              Figure below plot a case in which samples from the NQ data set are used in different numbers of poisoned documents.
+              It can be seen that in the scenario of multiple malicious documents, the malicious documents are close to each other, as for a single poisoned document, which will mix in the clean documents. Therefore, 
+              it is important to use the n-gram preservation to preserve the clean documents
+            </li>
+          </ul>
+          
+          <div class="content has-text-justified">
+            <p style="text-align: center;">
+              <a href="https://arxiv.org/pdf/2501.00879" target="_blank" rel="external">
+                <img class="center-block org-banner" src="./static/images/embedding_page-0001.jpg" width="100%"
+                  style="display: inline-block;">
+              </a>
+            </p>
+            <p align="center">
+              Figure5: The embedding distribution of retrieved documents
+            </p>
+          </div>
+        </div>
+      </div>
+    </div> 
+    
+    <div class="container">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-5">(1.2) N-gram preservation and Embedding Models</h2>
+          <div class="content has-text-justified">
+            <p style="text-align: center;">
+              <a href="https://arxiv.org/pdf/2501.00879" target="_blank" rel="external">
+                <img class="center-block org-banner" src="./static/images/table2.png" width="100%"
+                  style="display: inline-block;">
+              </a>
+            </p>
+            <p align="center">
+              Table 2: Results on various datasets with different Poisoning levels and embedding models. F1 score measures the performance of
+detecting poisoned samples, while Clean Retention Rate (CRR) evaluates the proportion of clean samples retained after filtering.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div> 
+
+    <div class="container">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-4">(2) Runtime Analysis </h2>
+          <div class="content has-text-justified">
+            <p style="text-align: center;">
+              <a href="https://arxiv.org/pdf/2501.00879" target="_blank" rel="external">
+                <img class="center-block org-banner" src="./static/images/table3.png" width="80%"
+                  style="display: inline-block;">
+              </a>
+            </p>
+            <p align="center">
+              Table 3. TrustRAG runtime analysis based on Llama3.1-8B for 100 queries in three different datasets.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div> 
+
+    <div class="container">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-4">(3) Effectiveness of Perplexity-based Detection </h2>
+          <div class="content has-text-justified">
+            <p style="text-align: center;">
+              <a href="https://arxiv.org/pdf/2501.00879" target="_blank" rel="external">
+                <img class="center-block org-banner" src="./static/images/ablation_page-0001.jpg" width="100%"
+                  style="display: inline-block;">
+              </a>
+            </p>
+            <p align="center">
+              Figure 2: (1) The perplexity distribution density plot between clean and malicious documents. And the lines of dashes represent the
+average perplexity values. (2) The bar plot of ablation study on accuracy in NQ dataset based on the Llama3.1-8B. (3) The bar plot of
+ablation study on attack success rate in NQ dataset based on the Llama3.1-8B.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div> 
+
+    <div class="container">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-4">(4) Impact of Context Window </h2>
+          <div class="content has-text-justified">
+            <p style="text-align: center;">
+              <a href="https://arxiv.org/pdf/2501.00879" target="_blank" rel="external">
+                <img class="center-block org-banner" src="./static/images/topk_page-0001.jpg" width="100%"
+                  style="display: inline-block;">
+              </a>
+            </p>
+            <p align="center">
+              Figure 4: (1) The line plot of accuracy between TrustRAG and Vanilla RAG on clean scenario. (2) The line plot of accuracy between
+TrustRAG and Vanilla RAG on malicious scenario. (3) The line plot of attack successful rate between TrustRAG and Vanilla RAG on
+malicious scenario. All the context windows set from 5 to 20 and the malicious scenario includes 5 malicious documents.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div> 
+
+       
 
 
 <section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
-    <h2 class="title">BibTeX</h2>
-    <!-- <pre><code>@article{park2021nerfies,
-  author    = {Park, Keunhong and Sinha, Utkarsh and Barron, Jonathan T. and Bouaziz, Sofien and Goldman, Dan B and Seitz, Steven M. and Martin-Brualla, Ricardo},
-  title     = {Nerfies: Deformable Neural Radiance Fields},
-  journal   = {ICCV},
-  year      = {2021},
-}</code></pre> -->
-<pre><code></code></pre>
+    <h2 class="title is-3 has-text-centered">Reference</h2>
+    <p>If you find our work helpful, please kindly cite our paper:</p>
+    <pre><code>@article{zhou2025trustrag,
+      title={TrustRAG: Enhancing Robustness and Trustworthiness in RAG}, 
+      author={Huichi Zhou and Kin-Hei Lee and Zhonghao Zhan and Yue Chen and Zhenhao Li},
+      year={2025},
+      eprint={2501.00879},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2501.00879}, 
+}</code></pre>
   </div>
 </section>
 
@@ -538,19 +508,19 @@
 <footer class="footer">
   <div class="container">
     <div class="content has-text-centered">
-      <!-- <a class="icon-link"
-         href="https://openreview.net/pdf?id=OheAR2xrtb">
+      <a class="icon-link"
+         href="https://arxiv.org/pdf/2501.00879">
         <i class="fas fa-file-pdf"></i>
-      </a> -->
-      <!-- <a class="icon-link" href="https://et-seed.github.io" class="external-link" disabled>
+      </a>
+      <a class="icon-link" href="https://github.com/HuichiZhou/TrustRAG" class="external-link" disabled>
         <i class="fab fa-github"></i>
-      </a> -->
+      </a>
     </div>
     <div class="columns is-centered">
       <div class="content has-text-centered">
         <div class="content">
           <p>
-            Website template borrowed from <a href="https://github.com/nerfies/nerfies.github.io">NeRFies</a>, <a href="https://unidoormanip.github.io">UniDoorManip</a>.
+            Website template borrowed from <a href="https://github.com/nerfies/nerfies.github.io">NeRFies</a>, <a href="https://et-seed.github.io/">ET-SEED</a>.
           </p>
         </div>
       </div>
